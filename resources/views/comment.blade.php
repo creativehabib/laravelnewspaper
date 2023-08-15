@@ -29,7 +29,7 @@
         @foreach($comments as $comment)
             <div class="flex">
                 <div class="flex-shrink-0 mr-3">
-                    <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3d&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="">
+                    <img class="mt-2 rounded-full w-5 h-5 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3d&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="">
                 </div>
                 <div class="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
                     <strong>{{$comment->user->name}}</strong><span class="text-xs text-gray-400">3:34 PM</span>
@@ -42,7 +42,7 @@
                             <div class="space-y-4 mb-2">
                                 <div class="flex">
                                     <div class="flex-shrink-0 mr-3">
-                                        <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3d&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="">
+                                        <img class="mt-2 rounded-full w-5 h-5 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3d&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="">
                                     </div>
                                     <div class="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
                                         <strong>{{ $reply->user->name }}</strong><span class="text-xs text-gray-400">3:34 PM</span>
@@ -60,7 +60,7 @@
                                             <div class="space-y-4 mb-2">
                                                 <div class="flex">
                                                     <div class="flex-shrink-0 mr-3">
-                                                        <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3d&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="">
+                                                        <img class="mt-2 rounded-full w-5 h-5 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3d&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="">
                                                     </div>
                                                     <div class="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
                                                         <strong>{{ $reply->user->name }}</strong><span class="text-xs text-gray-400">3:34 PM</span>

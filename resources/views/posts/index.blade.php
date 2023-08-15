@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <span class="bg-blue-600 rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
-                            Dec 22, 2023
+                            {{$post->created_at->format('M-d-Y')}}
                         </span>
                         <h3><a href="{{ route('post.show', $post->slug) }}"
                             class="
