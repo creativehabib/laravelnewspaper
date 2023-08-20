@@ -27,6 +27,10 @@
         <div class="max-w-xl">
             @include('profile.partials.update-profile-information-form')
         </div>
+        <div>
+            <input type="file" onChange="preview_2(this);" accept='.jpg, .jpeg, .png, .webp'><br>
+            <img id="imagePreview" style="height: 300px;width: 300px;" alt="" src="https://script.viserlab.com/viserbank/placeholder-image/400x400">
+        </div>
     </div>
 
     <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
@@ -40,4 +44,27 @@
             @include('profile.partials.delete-user-form')
         </div>
     </div>
+
+    <script>
+        let outImage ="imagePreview";
+        function preview_2(obj)
+        {
+            if (FileReader)
+            {
+                let reader = new FileReader();
+                reader.readAsDataURL(obj.files[0]);
+                reader.onload = function (e) {
+                    const image = new Image();
+                    image.src = e.target.result;
+                    image.onload = function () {
+                        document.getElementById(outImage).src=image.src;
+                    };
+                }
+            }
+            else
+            {
+                // Not supported
+            }
+        }
+    </script>
 </x-app-layout>

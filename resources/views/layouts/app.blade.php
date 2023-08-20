@@ -13,11 +13,10 @@
 
         <link rel="shortcut icon" href="{{URL::asset('assets/images/favicon.ico')}}" />
 
-        <!-- Scripts -->
-        @vite(['resources/js/app.js','resources/css/app.css'])
 
         <link rel="stylesheet" href="{{asset('assets/css/icons.css')}}" />
-        <link rel="stylesheet" href="{{asset('assets/css/tailwind.css')}}" />
+        <!-- Scripts -->
+        @vite(['resources/css/app.css'])
     </head>
     <body data-mode="light" data-sidebar-size="sm">
         @include('admin.layouts.navbar')
@@ -53,5 +52,6 @@
 {{--        <script src="{{asset('assets/js/pages/nav%26tabs.js')}}"></script>--}}
 
         <script src="{{asset('assets/js/app.js')}}"></script>
-    </body>
+        @vite(['resources/js/app.js'])
+</body>
 </html>

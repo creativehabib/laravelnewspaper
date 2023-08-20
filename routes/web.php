@@ -19,7 +19,11 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::get('/',[PostController::class,'index']);
+Route::get('/',function (){
+   return view('welcome');
+});
+
+Route::get('/post',[PostController::class,'index']);
 Route::get('/post/{slug}',[PostController::class,'show'])->name('post.show');
 
 Route::get('/dashboard', function () {
